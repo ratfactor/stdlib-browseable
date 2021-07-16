@@ -8,7 +8,7 @@ Most importantly, `@import()` calls get converted to hyperlinks so the library b
 
 Check out the results: http://ratfactor.com/zig/stdlib-browseable/std.zig.html
 
-![Alt text](http://ratfactor.com/zig/stdlib-browseable/screenshot.png)
+![screenshot of example output](http://ratfactor.com/zig/stdlib-browseable/screenshot.png)
 
 ## Bash and PHP? Ew!
 
