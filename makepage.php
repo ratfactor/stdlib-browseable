@@ -9,7 +9,7 @@ date_default_timezone_set('UTC');
 <head>
     <title><?=$title?></title>
     <style>
-        body { color: #777; background-color: #F2F2F2; }
+        body { color: #777; background-color: #F2F2F2; font-family: monospace; }
         code { display: block; white-space: pre; }
         a { font-weight: bold; }
         h1 { margin-bottom: 5px; }
