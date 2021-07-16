@@ -18,3 +18,5 @@ Because Zig syntax is so regular and minimal, it is trivial to parse. A handful 
 
 The source is tiny, easy to read (see for yourself!), and pages get generated at a rate of 42 per second, which is fast enough for me.
 Oh, and the whole project took just a couple hours to create from scratch, including this README. I think these are the right tools for the job.
+
+I've also got a short article with a little more detail: http://ratfactor.com/zig/browseable-standard-library
