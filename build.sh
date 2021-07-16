@@ -19,5 +19,5 @@ do
 
     echo $relative_file
     mkdir -p $(dirname $output_file)
-    php makepage.php $file > $output_file
+    php makepage.php $file $relative_file > $output_file
 done
