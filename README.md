@@ -6,9 +6,27 @@ The idea is to inverse the typical emphasis put on comments vs source (**comment
 
 Most importantly, `@import()` calls get converted to hyperlinks so the library becomes browseable.  Since include paths in the standard library are all relative, the link structure works perfectly with absolutely no modifications. **Too easy!**
 
+Read more about the theory:
+http://ratfactor.com/zig/browseable-standard-library
+
 Check out the results: http://ratfactor.com/zig/stdlib-browseable/std.zig.html
 
 ![screenshot of example output](http://ratfactor.com/zig/stdlib-browseable/screenshot.png)
+
+## Run it!
+
+The first parameter of the script must be a path to a Zig Std Lib (ending in trailing slash `/`):
+
+    ./build.sh /home/dave/zig/lib/std/
+
+The second parameter _can_ be a wildcard match of files/directories to generate:
+
+    ./build.sh /home/dave/zig/lib/std/ queue
+    atomic/queue.zig
+    priority_queue.zig
+    priority_dequeue.zig
+
+Output will be generated in a new directory named `output/` _in_ the current directory.
 
 ## Bash and PHP? Ew!
 
