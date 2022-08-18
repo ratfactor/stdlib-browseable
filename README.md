@@ -22,9 +22,11 @@ The first parameter of the script must be a path to a Zig Std Lib (ending in tra
 The second parameter _can_ be a wildcard match of files/directories to generate:
 
     ./build.sh /home/dave/zig/lib/std/ queue
-    atomic/queue.zig
-    priority_queue.zig
-    priority_dequeue.zig
+    dwarf.zig
+    target.zig
+    crypto/blake2.zig
+    crypto/aes_ocb.zig
+    ...
 
 Output will be generated in a new directory named `output/` _in_ the current directory.
 
