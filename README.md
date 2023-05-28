@@ -30,6 +30,22 @@ The second parameter _can_ be a wildcard match of files/directories to generate:
 
 Output will be generated in a new directory named `output/` _in_ the current directory.
 
+### Run it in Docker/Podman/etc.
+
+A `Dockerfile` is provided which contains all the dependencies needed to run
+this generator, if you'd rather not deal with them on your host OS. Docker is
+used for this example, though Podman should work as well.
+
+```sh
+docker build -t ratfactor/zig-stdlib-browser .
+
+# Now, assuming we've checked out ziglang/zig to ~/src/zig (adjust to fit
+# whatever is on your own disk)
+docker run --rm -v ~/src/zig:/usr/src/zig -v $(pwd)/output:/usr/src/myapp/output ratfactor/zig-stdlib-browser
+```
+
+The `output/` directory _in the current directory_ should now be populated!
+
 ## Bash and PHP? Ew!
 
 Seriously, Bash is _perfect_ for gathering the source files and PHP is _perfect_ for generating HTML documents from a template.
