@@ -1,5 +1,8 @@
 # Browseable Zig standard library
 
+**MOVED!** Hello, I am moving my repos to http://ratfactor.com/repos/
+and setting them to read-only ("archived") on GitHub. Thank you, _-Dave_
+
 This shell script and PHP file create a browseable HTML site from the Zig standard library source.
 
 The idea is to inverse the typical emphasis put on comments vs source (**comments are the star of the show**), and highlighting only the most important public names in the source to make them easy to spot.
